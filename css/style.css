@@ -1,0 +1,19 @@
+body{
+    background-color: blue;
+}
+h1{
+    color: aqua;
+}
+#parrafo{
+    color: red;
+}
+.caja{
+    border: solid 1px yellow;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    padding: 20px;
+}
+.caja#black{
+    border: solid 1px black;
+}
