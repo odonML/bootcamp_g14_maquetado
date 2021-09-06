@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #DEDEDE;
+}
+header, section.page, footer{
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+header .logo-cont img{
+    width: 50px;
+}
+nav{
+    background-color: lightskyblue;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+section.page .main{
+    display: flex;
+}
+.articles{
+    width: 70%;
+}
+.articles article{
+    padding: 50px 20px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+aside{
+    width: 30%;
+    padding: 50px 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    line-height: auto;
+    background-color: white;
+    border-radius: 5px;
+}
