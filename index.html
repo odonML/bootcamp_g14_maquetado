@@ -1,34 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo netfliXXX</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header>
+      <nav class="navbar">
         <div class="logo">
-            <img src="./img/logo.png" alt="logo" >
+          <img class="logo-netflix" src="./img/logo.png" alt="logo" />
         </div>
-        <p>Iniciar Sesion</p>
+        <div class="botones">
+          <select class="lan-select" name="Idioma">
+            <option>Spanish</option>
+            <option>English</option>
+          </select>
+          <button class="btn">Iniciar Sesion</button>
+        </div>
+      </nav>
     </header>
-    <main>
-        <div class="content">
-            <h2>Titulo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum dolorem numquam dicta ab praesentium sed dignissimos reprehenderit quae non tempore. Eos earum nihil minus mollitia repudiandae nostrum aut et eveniet.</p>
-        </div>
-    </main>
 
-    <section class="sub-content">
-        <div class="sub-img">
-            <img src="./img/fondo.jpg" alt="fondo">
+    <main>
+      <section class="home">
+        <div class="gradient">
+          <div class="home-txt">
+            <h1 class="txt-l m-5">
+              Películas y series ilimitadas y mucho más.
+            </h1>
+            <p class="txt-m m-5">
+              Disfruta donde quieras. Cancela cuando quieras.
+            </p>
+            <p class="txt-s m-5">
+              ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o
+              reiniciar tu membresía de Netflix.
+            </p>
+            <div class="in-btn-cont m-5">
+              <div class="input-btn">
+                <input class="input" type="email" placeholder="email" />
+                <input class="btn" type="button" value="Comenzar" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="sub-texto">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magni quae, molestiae, necessitatibus minima dolores debitis eaque libero harum mollitia sed ipsum autem nesciunt esse perferendis blanditiis iusto fuga ratione?</p>
+      </section>
+
+      <section class="s1 sections">
+        <div class="contenido">
+            <div class="texto">
+                <h2 class="txt-l m-5">Disfruta en tu TV.</h2>
+                <p class="txt-m m-5">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
+            </div>
+            <div class="img">
+                <img src="img/s1.png" alt="Disfruta en tu television">
+            </div>
         </div>
-    </section>
-    
-</body>
+      </section>
+
+      <section class="s2 sections">
+        <div class="contenido">
+            <div class="img">
+                <img src="img/s2.jpg" alt="Descarga tus series para verlas offline.">
+            </div>
+            <div class="texto">
+                <h2 class="txt-l m-5">Descarga tus series para verlas offline.</h2>
+                <p class="txt-m m-5">Guarda tu contenido favorito y ten siempre algo para ver.</p>
+            </div>
+        </div>
+      </section>
+
+      <section class="s3 sections">
+        <div class="contenido">
+            <div class="texto">
+                <h2 class="txt-l m-5">Disfruta donde quieras.</h2>
+                <p class="txt-m m-5">Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo extra.</p>
+            </div>
+            <div class="img">
+                <img src="img/s3.png" alt="Disfruta donde quieras.">
+            </div>
+        </div>
+      </section>
+
+      <section class="s4 sections">
+        <div class="contenido">
+            <div class="img">
+                <img src="img/s4.png" alt="Crea perfiles para niños.">
+            </div>
+            <div class="texto">
+                <h2 class="txt-l m-5">Crea perfiles para niños.</h2>
+                <p class="txt-m m-5">Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.     </p>
+            </div>
+        </div>
+      </section>
+
+
+  </body>
 </html>

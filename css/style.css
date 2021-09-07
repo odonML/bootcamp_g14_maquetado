@@ -3,56 +3,163 @@
     padding: 0px;
     box-sizing: border-box;
 }
-header, main{
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: black;
+}
+/* ------HEADER------ */
+header, main>section, section.sections{
     width: 100%;
 }
 header{
-    position:absolute;  
-    height: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    /* border: solid 1px red; */
+}
+.navbar{
+    width: 90%;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 50px;
-    border: solid 1px red;
+
+    /* border: solid 1px red; */
 }
-header .logo{
+.logo{
     width: 150px;
-    border: solid 1px orange;
+    /* border: solid 2px yellow; */
 }
-.logo img{
+.logo-netflix{
     width: 100%;
+    /* border: solid 1px chartreuse; */
 }
-main{
+.botones{
+    min-width: 28%;
+    display: flex;
+    justify-content: space-between;
+    /* border: solid 1px blue; */
+}
+.botones .lan-select{
+    padding: 0px 20px;
+    border: none;
+}
+.btn{
+    height: 40px;
+    padding: 0px 20px;
+    border: none;
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    transition: .5s;
+}
+.btn:hover{
+    letter-spacing: 2px;
+}
+/* ------MAIN------ */
+.home{
     height: 100vh;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.gradient{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0px;
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.479),
+        rgba(0, 0, 0, 0.747),
+        transparent 1500px
+      );
+     display: flex; 
+     justify-content: center;
+     align-items: center;
+}
+.home-txt{
+    max-width: 50%;
+    text-align: center;
+    /* border: solid 1px red */
+}
+.in-btn-cont{
+    display: flex;
+    justify-content: center;
+    /* border: solid 1px red; */
+}
+.input-btn{
+    max-width: auto;
+    height: 40px;
+    /* border: solid 1px blue; */
+}
+.input-btn .input{
+    height: 100%;
+    padding: 0px 15px;
+    font-size: 20px;
+}
+.input-btn .btn{
+    height: 100%;
+}
+/* -----SECTIONS----- */
+.sections{
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.content{
-    width: 30%;
-    border: solid 1px red;
-}
-.sub-content{
-    width: 100%;
-    height: 100vh;
-    padding: 0px 50px;
+.s1 .contenido{
+    width: 90%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column-reverse; */
+}
+.s2 .contenido{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s3 .contenido{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s4 .contenido{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido .texto{
+    max-width: 60%;
+    width: 60%;
+    padding: 10px 60px;
+    /* border: solid 1px blue; */
+}
+.contenido .img{
+    max-width: 40%;
+    /* border: solid 1px blue; */
+}
+.contenido .img img{
+    width: 100%;
 }
 
-.sub-img{
-    height: auto;
+/* -----SIZE txt----- */
+.txt-l{
+    font-size: 48px;
 }
-.sub-texto{
-    height: 70vh;
-    /* border: solid 1px yellow; */
+.txt-m{
+    font-size: 28px;
 }
-.sub-img img{
-    width: 100%;
+.txt-s{
+    font-size: 20px;
 }
-.sub-texto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 50px;
+/* -----SIZE margin-----*/
+.m-5{
+    margin: 15px;
 }
