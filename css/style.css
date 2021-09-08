@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* outline: solid blue; */
 }
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -16,51 +17,46 @@ header{
     position: absolute;
     display: flex;
     justify-content: center;
-    padding: 10px;
-    /* border: solid 1px red; */
+    padding: 5px 10px;
 }
 .navbar{
-    width: 90%;
+    width: 100%;
     padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /* border: solid 1px red; */
 }
 .logo{
-    width: 150px;
-    /* border: solid 2px yellow; */
+    width: 25%;
 }
-.logo-netflix{
+.svg-icon-netflix-logo{
+    fill: red;
     width: 100%;
-    /* border: solid 1px chartreuse; */
 }
 .botones{
-    min-width: 28%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    /* border: solid 1px blue; */
+    justify-content: flex-end;
 }
 .botones .lan-select{
-    padding: 0px 20px;
+    padding: 0px 5px;
     border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.432);
+    font-size: .7em;
 }
 .btn{
-    height: 40px;
-    padding: 0px 20px;
+    height: 100%;
+    padding: 0px 5px;
     border: none;
     color: white;
     background-color: red;
-    font-size: 20px;
+    font-size: .7em;
     transition: .5s;
-}
-.btn:hover{
-    letter-spacing: 2px;
 }
 /* ------MAIN------ */
 .home{
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url('../img/fondo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,93 +69,167 @@ header{
     background: radial-gradient(
         circle,
         rgba(0, 0, 0, 0.479),
-        rgba(0, 0, 0, 0.747),
-        transparent 1500px
+        rgba(0, 0, 0, 0.836),
+        rgb(0, 0, 0),
+        transparent 1000px
       );
      display: flex; 
      justify-content: center;
-     align-items: center;
+     align-items: center;   
 }
 .home-txt{
-    max-width: 50%;
+    max-width: 90%;
     text-align: center;
-    /* border: solid 1px red */
 }
-.in-btn-cont{
-    display: flex;
-    justify-content: center;
-    /* border: solid 1px red; */
-}
-.input-btn{
-    max-width: auto;
-    height: 40px;
-    /* border: solid 1px blue; */
-}
-.input-btn .input{
-    height: 100%;
-    padding: 0px 15px;
-    font-size: 20px;
-}
-.input-btn .btn{
-    height: 100%;
-}
-/* -----SECTIONS----- */
-.sections{
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.s1 .contenido{
+.in-btn-cont{   
     width: 90%;
     display: flex;
     justify-content: center;
+}
+.input-btn{
+    max-width: 100%;
+}
+.input-btn .input{
+    width: 50%;
+    height: 100%;
+    border: none;
+    padding: 0px 5px;
+    font-size: .7em;
+}
+.input-btn .btn{
+    /* height: 100%; */
+}
+/* -----SECTIONS----- */
+.sections{
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    /* flex-direction: column-reverse; */
+    padding: 10px ;
+    /* border: solid 1px blue;   */
+}
+.s1 .contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .s2 .contenido{
-    width: 80%;
+    width: 100%;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 }
 .s3 .contenido{
-    width: 80%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .s4 .contenido{
-    width: 90%;
+    width: 100%;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 }
 .contenido .texto{
-    max-width: 60%;
-    width: 60%;
-    padding: 10px 60px;
-    /* border: solid 1px blue; */
+    max-width: 90%;
+    border: solid 1px red;
 }
 .contenido .img{
-    max-width: 40%;
-    /* border: solid 1px blue; */
+    max-width: 80%;
+    border: solid 1px red;
 }
 .contenido .img img{
     width: 100%;
 }
 
 /* -----SIZE txt----- */
+   /* 
+    1em = 16px
+    .5em = 8px
+    .25em = 4px
+    .125em = 2px
+    max------------
+    txt-l = 2.5em
+    txt-m = 1.5em
+    txt-s = 1.25em
+    */
+
 .txt-l{
-    font-size: 48px;
+    font-size: 1.7em;
 }
 .txt-m{
-    font-size: 28px;
+    font-size: .9em;
 }
 .txt-s{
-    font-size: 20px;
+    font-size: .8em;
 }
 /* -----SIZE margin-----*/
 .m-5{
-    margin: 15px;
+    margin: 5px;
+}
+@media (min-width: 426px){
+    body{
+        font-size: 25px;
+    }
+    .logo{
+        width: 15%;
+    }
+    .btn{
+        height: 100%;
+    }
+    .botones{
+        width: 30%;
+        justify-content: space-between;
+    }
+    .input-btn .btn{
+        height: 100%;
+    }
+    /* -----SIZE margin-----*/
+    .m-5{
+        margin: 10px;
+    }
+}
+@media (min-width:769px){
+
+    body{
+        font-size: 25px;
+    }
+    .logo{
+        width: 10%;
+    }
+    .botones{
+        width: 25%;
+    }
+
+    .s1 .contenido{
+        width: 80%;
+        flex-direction: row;
+    }
+    .s2 .contenido{
+        width: 90%;
+        flex-direction: row;
+    }
+    .s3 .contenido{
+        width: 90%;
+        flex-direction: row;
+    }
+    .s4 .contenido{
+        width: 90%;
+        flex-direction: row;
+    }
+    .contenido .texto{
+        width: 50%;
+    }
+    .contenido .img{
+        width: 50%;
+    }  
+}
+@media (min-width: 1025){
+    
 }
