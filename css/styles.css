@@ -9,10 +9,10 @@ body{
     background-color: var(--c-primary) ;
 }
 .navbar-cus{
-    background-color: var(--c-quinario);
+    background-color: var(--c-cuaternary);
 }
 a{
-    color: var(--c-primary) !important;
+    color: var(--c-terciary) !important;
 }
 .row{
     padding-left: 0px !important;
