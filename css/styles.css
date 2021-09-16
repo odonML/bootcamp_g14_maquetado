@@ -47,3 +47,8 @@ a{
 .data{
     padding: 0px 10px;
 }
+
+.w-100{
+    min-height: 200px;
+    height: 450px !important;
+}
